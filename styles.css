@@ -1,3 +1,5 @@
+/*I wanted to set up some boxes-within-boxes that looks kind of Star Trek lcars-esque. Not satisfied with color scheme yet-- add some complexity and also make sure we've got high visibility/readability for text*/
+
 body {
     display: flex;
     background-color: #41393E;
@@ -28,8 +30,35 @@ body {
 
 .second-biggest-box {
     display: flex;
+    flex-direction: column;
     background-color: #41393E;
-    width: 80%;
+    width: 90%;
     height: 80%;
     border-radius: 0 15px 15px 0;
+}
+
+/*depends on if we like this sharp/aligned edge on the left margin of screen and button*/
+.button-main {
+    background-color:bisque;
+    text-align: center;
+    color: #41393E;
+    font-size: larger;
+    font-family: 'Akshar', sans-serif;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 0 10px 10px 0;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+/*you will see significantly rounder buttons in Star Trek lcars screens, so this is closer to that styling*/
+.button-alt-option {
+    background-color:bisque;
+    text-align: center;
+    color: #41393E;
+    font-size: larger;
+    font-family: 'Akshar', sans-serif;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 20px;
+    margin: 1rem 1rem 1rem 0rem;
 }
